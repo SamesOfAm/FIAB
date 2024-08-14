@@ -1,0 +1,50 @@
+@import "variables";
+
+.swiper-slide {
+  .content-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 150px;
+  transform: translateY(50%);
+  top: auto;
+  border: 0;
+  background: transparent;
+  outline: none;
+  width: 65px;
+  height: 65px;
+  &:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.swiper-button-prev:after {
+  background: url("/files/assets/layout/arrow-left.svg") 0/cover no-repeat;
+}
+.swiper-button-next:after {
+  background: url("/files/assets/layout/arrow-right.svg") 0/cover no-repeat;
+}
+
+.blue-bg {
+  .content-swiper {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto 20px;
+    overflow: visible;
+    .content-image {
+      max-width: 1081px;
+      margin: 0 auto;
+    }
+    .swiper-button-prev, .swiper-button-next {
+      transform: translateY(0%);
+      top: 50%;
+      bottom: 0;
+    }
+  }
+}
