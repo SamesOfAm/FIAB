@@ -1,0 +1,23 @@
+@import 'variables';
+
+#header .inside {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-left {
+  .content-text p {
+    margin: 0;
+    a {
+      &:first-child {
+        display: inline-block;
+        border-top: 5px solid $blue;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
