@@ -60,10 +60,22 @@
       }
     }
   }
+  .content-element-group {
+    .content-image {
+      img {
+        width: 250px;
+      }
+    }
+    .content-text {
+      img {
+        width: 40px;
+      }
+    }
+  }
 }
 
 .mod_article {
-  .content-text:not(.teaser-text) {
+  .content-text:not(.teaser-text), .content-element-group, .ce_form {
     width: 90%;
     max-width: 1100px;
     margin: 60px auto;
@@ -76,5 +88,15 @@
 
       }
     }
+  }
+}
+
+.mod_article.bg-yellow {
+  width: 100%;
+  background: url("/files/assets/layout/neu_0008_drew-beamer-5DD7-L4A4Uw-unsplash.jpg") center top no-repeat;
+  background-size: cover;
+  height: auto;
+  .content-text {
+    max-width: 830px;
   }
 }

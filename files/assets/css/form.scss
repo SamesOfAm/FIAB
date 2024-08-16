@@ -1,0 +1,41 @@
+@import "variables";
+
+.mod_article.bg-yellow {
+  .ce_form {
+    text-align: left;
+    max-width: 550px;
+    .formbody {
+      .widget-text, .widget-textarea {
+        margin: 15px 0;
+         input, textarea {
+           background-color: $black;
+           border: 0;
+           color: white;
+           cursor: pointer;
+           width: 100%;
+           padding: 10px 10px;
+           outline: none;
+           font: normal normal 400 16px/27px Open Sans;
+           letter-spacing: .5px;
+           box-sizing: border-box;
+           resize: none;
+           text-transform: uppercase;
+           transition: background-color 250ms;
+           &:hover {
+             background: $blue
+           }
+        }
+      }
+      .widget-explanation {
+        p {
+          font: normal normal 400 14px/16.8px 'Open Sans';
+        }
+      }
+    }
+  }
+}
+
+#container ::placeholder {
+  opacity: 1;
+  color: white;
+}

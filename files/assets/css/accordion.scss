@@ -1,0 +1,65 @@
+@import "variables";
+
+.blue-bg .content-accordion {
+  //border-bottom: none;
+  width: 90%;
+  margin: 50px auto;
+  max-width: 1170px;
+  .handorgel__header {
+    position: relative;
+    margin: 10px auto;
+    button {
+      font: normal normal 600 24px/28.8px Open Sans;
+      text-transform: uppercase;
+      color: rgb(192, 209, 232);
+      padding: 10px 15px;
+      position: relative;
+      background-color: transparent;
+      text-align: center;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+        width: 32px;
+        height: 32px;
+        background: url("/files/assets/layout/accordion-blue.svg") no-repeat 0/cover;
+        transition: background 250ms;
+      }
+    }
+  /*  &:last-child {
+      border-bottom: 1px solid white;
+      padding-top: 15px;
+    }*/
+    &--opened {
+      button {
+        &:after {
+          background: url("/files/assets/layout/accordion-blue.svg") no-repeat 0/cover;
+        }
+      }
+    }
+    &:hover {
+      button:after {
+        background: url("/files/assets/layout/accordion-blue.svg") no-repeat 0/cover;
+      }
+    }
+  }
+  .handorgel__content {
+    background-color: transparent;
+    text-align: center;
+    width: 90%;
+    max-width: 1170px;
+    padding: 0 110px;
+    border-top: none;
+    margin: 0 auto;
+    .handorgel__content__inner {
+      padding: 0 0 5px;
+    }
+  }
+}
+
+
+
+
+
