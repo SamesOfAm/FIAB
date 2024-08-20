@@ -16,6 +16,7 @@
       position: relative;
       background-color: transparent;
       text-align: center;
+      transition: color 250ms;
       &:after {
         content: "";
         position: absolute;
@@ -27,22 +28,22 @@
         background: url("/files/assets/layout/accordion-blue.svg") no-repeat 0/cover;
         transition: background 250ms;
       }
+      &:hover {
+        color: $green;
+      }
     }
-  /*  &:last-child {
-      border-bottom: 1px solid white;
-      padding-top: 15px;
-    }*/
     &--opened {
       button {
+        color: $green;
         &:after {
-          background: url("/files/assets/layout/accordion-blue.svg") no-repeat 0/cover;
+          background: url("/files/assets/layout/icon-akkordeon-minus.svg") no-repeat 0/cover;
         }
       }
     }
     &:hover {
-      button:after {
+     /* button:after {
         background: url("/files/assets/layout/accordion-blue.svg") no-repeat 0/cover;
-      }
+      }*/
     }
   }
   .handorgel__content {
