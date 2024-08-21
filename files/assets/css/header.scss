@@ -1,12 +1,12 @@
 @import 'variables';
 
-#header .inside {
+/*#header .inside {
   display: flex;
   justify-content: space-between;
   width: 90%;
   max-width: $max-width;
   margin: 0 auto;
-}
+}*/
 
 .header-left {
   .content-text p {
@@ -56,6 +56,7 @@
 
 .header-left {
   align-content: center;
+  width: 30%;
   .bar-top {
     display: inline-block;
     border-top: 5px solid #0267a4;
@@ -71,4 +72,23 @@
     }
   }
 }
+
+@media screen and (max-width: 1025px) {
+  #header .inside {
+    width: 95%;
+  }
+  .header-left {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #header .inside, .inner-top {
+    height: 120px;
+  }
+  .header-right .mod_mobile_menu .mobile_menu_trigger span {
+    font: normal normal 700 25px/30px Open Sans;
+  }
+}
+
 

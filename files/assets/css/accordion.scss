@@ -49,14 +49,25 @@
   .handorgel__content {
     background-color: transparent;
     text-align: center;
-    width: 90%;
+    width: 100%;
     max-width: 1170px;
-    padding: 0 110px;
     border-top: none;
     margin: 0 auto;
     .handorgel__content__inner {
       padding: 0 0 5px;
     }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .blue-bg .content-accordion {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blue-bg .content-accordion .handorgel__header button::after {
+    right: 10px;
   }
 }
 

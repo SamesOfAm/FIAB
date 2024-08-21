@@ -50,4 +50,27 @@ ul {
   }
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .stoerer-button {
+    img {
+      width: 180px;
+    }
+  }
+
+  .back-to-top {
+    justify-content: center;
+    height: auto;
+  }
+}
+
 
