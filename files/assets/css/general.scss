@@ -16,7 +16,7 @@ h3 {
   font: normal normal 800 24px/28.8px 'Open Sans';
 }
 
-p {
+p, li {
   font: normal normal 300 20px/30px 'Open Sans';
 }
 
@@ -70,6 +70,12 @@ ul {
   .back-to-top {
     justify-content: center;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 650px)  {
+  .stoerer-button {
+    top: 30vw;
   }
 }
 

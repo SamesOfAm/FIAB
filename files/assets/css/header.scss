@@ -82,12 +82,23 @@
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 650px) {
   #header .inside, .inner-top {
     height: 120px;
   }
   .header-right .mod_mobile_menu .mobile_menu_trigger span {
     font: normal normal 700 25px/30px Open Sans;
+  }
+  .header-left .bar-top {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-left {
+    .content-text {
+      margin-top: 7px;
+    }
   }
 }
 

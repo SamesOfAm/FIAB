@@ -1,6 +1,6 @@
 @import "variables";
 
-.mod_article.bg-yellow {
+.mod_article.bg-yellow, .contact {
   .ce_form {
     text-align: left;
     max-width: 550px;
@@ -112,6 +112,34 @@
     &:hover {
       background-color: $green;
       color: white;
+    }
+  }
+}
+
+.mod_login form , .mod_article  .mod_registration, .mod_lostPassword {
+  text-align: left;
+  .formbody .widget {
+    label {
+      text-transform: uppercase;
+      font-size: 15px;
+      width: 100%;
+      display: block;
+      margin: 5px 0;
+    }
+    input {
+      box-sizing: border-box;
+      padding: 10px 12px;
+      font-size: 15px;
+      margin: 5px 0;
+      outline: none;
+      width: 100%;
+      border: 2px solid $hell_blue;
+    }
+    &.widget-submit {
+      margin-top: 25px;
+      .submit {
+        background-color: $black;
+      }
     }
   }
 }

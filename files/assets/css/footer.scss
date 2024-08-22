@@ -66,6 +66,7 @@
       }
     }
     .footer-right {
+      width: 40%;
       .content-text {
         width: 100%;
         p {
@@ -108,6 +109,9 @@
           &:hover {
             color: $gray;
           }
+        }
+        strong {
+          color: $green;
         }
         &:not(:last-child) {
           border-right: 2px solid white;
@@ -183,7 +187,7 @@
         }
       }
     }
-    .mod_customnav.block {
+    .mod_customnav {
       width: 95%;
       margin: 0 auto;
       max-width: $max-width;
@@ -206,6 +210,9 @@
            &:hover {
              filter: opacity(.6);
            }
+         }
+         strong {
+           color: $green;
          }
          &:not(:last-child) {
            border-right: 2px solid white;
