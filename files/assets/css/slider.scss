@@ -78,8 +78,11 @@
     max-width: 1170px;
     margin: 0 auto 20px;
     overflow: visible;
+   /* .swiper {
+      overflow: visible;
+    }*/
     .content-image {
-      max-width: 1081px;
+      //max-width: 1081px;
       margin: 0 auto;
       width: 95%;
     }
@@ -89,10 +92,10 @@
       bottom: 0;
     }
     .swiper-button-prev {
-      left: 0;
+      left: -8px;
     }
     .swiper-button-next {
-      right: 0;
+      right: -8px;
     }
   }
   .swiper-pagination {
@@ -124,6 +127,12 @@
     width: 95%;
     .content-image {
       width: 100%;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+    .swiper-button-next {
+      right: 0;
     }
   }
 }

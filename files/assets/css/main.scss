@@ -242,10 +242,10 @@
       margin: 10px auto;
       box-sizing: border-box;
       padding: 20px 15px;
-      background-color: #2f5e7b;
+      background-color: #003c58;
       a {
         color: white;
-        transition: filter 250ms;
+        transition: background-color 250ms;
         h3 {
           text-transform: uppercase;
           border-bottom: 1px solid white;
@@ -273,7 +273,7 @@
           }
         }
         &:hover {
-          filter: opacity(.6);
+          background-color: #2f5e7b;;
         }
       }
     }

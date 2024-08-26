@@ -34,7 +34,7 @@ ul {
     width: 40px;
     transition: filter 250ms;
     &:hover {
-      filter: invert(1)
+      filter: brightness(0) saturate(100%) invert(28%) sepia(77%) saturate(1342%) hue-rotate(131deg) brightness(92%) contrast(102%);
     }
   }
 }

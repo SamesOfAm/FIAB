@@ -19,7 +19,6 @@
            letter-spacing: .5px;
            box-sizing: border-box;
            resize: none;
-           text-transform: uppercase;
            transition: background-color 250ms;
            &:hover {
              background: $blue
@@ -46,6 +45,7 @@
 #container ::placeholder {
   opacity: 1;
   color: white;
+  text-transform: uppercase;
 }
 
 .widget-checkbox {
@@ -139,6 +139,11 @@
       margin-top: 25px;
       .submit {
         background-color: $black;
+        color: white;
+        &:hover {
+          color: $hell_blue;
+          background-color: $gray;
+        }
       }
     }
   }
