@@ -34,7 +34,7 @@ ul {
     width: 40px;
     transition: filter 250ms;
     &:hover {
-      filter: brightness(0) saturate(100%) invert(28%) sepia(77%) saturate(1342%) hue-rotate(131deg) brightness(92%) contrast(102%);
+      filter: brightness(0) saturate(100%) invert(31%) sepia(49%) saturate(802%) hue-rotate(108deg) brightness(103%) contrast(100%);
     }
   }
 }
@@ -50,7 +50,7 @@ ul {
   }
 }
 
-.mobile-only {
+.mobile-only, .mobile-only1 {
   display: none;
 }
 
@@ -76,6 +76,15 @@ ul {
 @media screen and (max-width: 650px)  {
   .stoerer-button {
     top: 30vw;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .mobile-only1 {
+    display: block;
   }
 }
 

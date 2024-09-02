@@ -47,12 +47,14 @@
           padding-left: 30px;
           transition: color 250ms;
           &:before {
-            color: white;
-            content: ">";
+            content: "";
             position: absolute;
-            top: -7px;
+            top: 9px;
             left: 0;
-            font: normal normal 400 30px/60px Open Sans;
+            background: url("/files/assets/layout/menu-icon.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+            filter: invert(1);
           }
         }
         strong, strong:before, a:hover {

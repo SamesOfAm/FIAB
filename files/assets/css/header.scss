@@ -12,11 +12,25 @@
   .content-text p {
     margin: 0;
     a {
-   /*   &:first-child {
-        display: inline-block;
-        border-top: 5px solid $blue;
-        padding-top: 20px;
-      }*/
+      transition: filter 250ms;
+      &:nth-child(2) {
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(5134%) hue-rotate(192deg) brightness(93%) contrast(100%);
+        }
+      }
+      &:first-child {
+        &:hover {
+          filter: grayscale(1);
+        }
+      }
+      &:last-child {
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(7143%) hue-rotate(163deg) brightness(96%) contrast(100%);
+        }
+      }
+    }
+    img {
+      height: 32px;
     }
   }
 }
@@ -56,7 +70,7 @@
 
 .header-left {
   align-content: center;
-  width: 30%;
+  width: 35%;
   .bar-top {
     display: inline-block;
     border-top: 5px solid #0267a4;
@@ -70,6 +84,12 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header-left {
+    width: 34%;
   }
 }
 

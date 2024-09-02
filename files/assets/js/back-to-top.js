@@ -1,5 +1,14 @@
-const backButton = document.querySelector('.back-to-top img');
-backButton.addEventListener('click', () => {
+const backButtonDesktop = document.querySelector('.footer.desktop-only .back-to-top img');
+backButtonDesktop.addEventListener('click', () => {
+    document.querySelector('body,html').getBoundingClientRect().top;
+    window.scrollTo({
+        behavior: 'smooth',
+        top: scroll,
+    });
+})
+
+const backButtonMobile = document.querySelector('.footer-mobile-only .back-to-top img');
+backButtonMobile.addEventListener('click', () => {
     document.querySelector('body,html').getBoundingClientRect().top;
     window.scrollTo({
         behavior: 'smooth',

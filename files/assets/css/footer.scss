@@ -51,6 +51,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 30px auto 0;
+    border-top: 1px solid $hell_blue;
+    padding-top: 10px;
     .content-text {
       width: 41%;
       p {
@@ -73,6 +75,12 @@
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
+          a {
+            transition: filter 250ms;
+            &:hover {
+              filter: opacity(.75);
+            }
+          }
         }
       }
     }
@@ -125,6 +133,12 @@
 
 .footer-mobile-only {
   display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .footer-top .footer-top-teaser .footer-right {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 1025px) {
