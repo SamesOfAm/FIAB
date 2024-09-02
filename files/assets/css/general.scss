@@ -6,9 +6,86 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
+h2 {
+  font: normal normal 300 30px/36px 'Open Sans';
+}
 
+h3 {
+  font: normal normal 800 24px/28.8px 'Open Sans';
+}
+
+p, li {
+  font: normal normal 300 20px/30px 'Open Sans';
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: end;
+  height: 100%;
+  img {
+    width: 40px;
+    transition: filter 250ms;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(31%) sepia(49%) saturate(802%) hue-rotate(108deg) brightness(103%) contrast(100%);
+    }
+  }
+}
+
+.stoerer-button {
+  position: absolute;
+  top: 22vw;
+  transform: translateY(-50%);
+  z-index: 100;
+  right: 0;
+  img{
+    width: 300px;
+  }
+}
+
+.mobile-only, .mobile-only1 {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+  .stoerer-button {
+    img {
+      width: 180px;
+    }
+  }
+
+  .back-to-top {
+    justify-content: center;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 650px)  {
+  .stoerer-button {
+    top: 30vw;
+  }
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .mobile-only1 {
+    display: block;
+  }
+}
 
 

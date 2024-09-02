@@ -1,0 +1,156 @@
+@import "variables";
+
+.mod_article.bg-yellow, .contact {
+  .ce_form {
+    text-align: left;
+    max-width: 550px;
+    .formbody {
+      .widget-text, .widget-textarea {
+        margin: 15px 0;
+         input, textarea {
+           background-color: $black;
+           border: 0;
+           color: white;
+           cursor: pointer;
+           width: 100%;
+           padding: 10px 10px;
+           outline: none;
+           font: normal normal 400 16px/27px Open Sans;
+           letter-spacing: .5px;
+           box-sizing: border-box;
+           resize: none;
+           transition: background-color 250ms;
+           &:hover {
+             background: $blue
+           }
+        }
+      }
+      .widget-explanation {
+        p {
+          font: normal normal 400 14px/16.8px 'Open Sans';
+          a {
+            color: black;
+            border-bottom: 2px solid $gray;
+            transition: color 250ms;
+            &:hover {
+              color: $hell_blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#container ::placeholder {
+  opacity: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.widget-checkbox {
+  margin: 15px 0 30px;
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    span {
+      input {
+        display: none;
+      }
+      label {
+        position: relative;
+        display: inline-block;
+        padding-left: 30px;
+        cursor: pointer;
+        font: normal normal 400 14px/16.8px Open Sans;
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 15px;
+          height: 15px;
+          background: white;
+          font-size: 20px;
+          text-align: center;
+          border: 1px solid $hell_blue;
+        }
+      }
+    }
+  }
+}
+.ce_form {
+  .widget-checkbox fieldset span input:checked ~ label::before {
+    background: $hell_blue;
+  }
+}
+
+.widget-submit {
+  text-align: center;
+  .submit {
+    position: relative;
+    font: normal normal normal 18px/26px Open Sans;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: white;
+    padding: 10px 50px 10px 70px;
+    transition: background-color 250ms, color 250ms;
+    outline: 0;
+    border: 0;
+    border-top: 3px solid $hell_blue;
+    border-bottom: 3px solid $hell_blue;
+    &:before {
+      position: absolute;
+      content: "";
+      top: 13px;
+      left: 45px;
+      width: 20px;
+      height: 20px;;
+      background: url("/files/assets/layout/check.svg") no-repeat;
+    }
+    &:hover {
+      background-color: $green;
+      color: white;
+    }
+  }
+}
+
+.mod_login form , .mod_article  .mod_registration, .mod_lostPassword {
+  text-align: left;
+  .formbody .widget {
+    label {
+      text-transform: uppercase;
+      font-size: 15px;
+      width: 100%;
+      display: block;
+      margin: 5px 0;
+    }
+    input {
+      box-sizing: border-box;
+      padding: 10px 12px;
+      font-size: 15px;
+      margin: 5px 0;
+      outline: none;
+      width: 100%;
+      border: 2px solid $hell_blue;
+    }
+    &.widget-submit {
+      margin-top: 25px;
+      .submit {
+        background-color: $black;
+        color: white;
+        &:hover {
+          color: $hell_blue;
+          background-color: $gray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .mod_article.bg-yellow .ce_form {
+    max-width: 100%;
+  }
+}

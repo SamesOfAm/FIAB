@@ -1,0 +1,106 @@
+@import "variables";
+
+.mobile_menu .inner {
+  background-image: linear-gradient(to right, rgba(0, 122, 77, 0.85), rgba(0, 60, 88, 0.85) 40%);
+  .header-inner {
+   background-color: white;
+    .inner-top {
+      .header-right {
+        .menu-close {
+          color: black;
+          height: auto;
+          display: inline-block;
+          transition: filter 250ms;
+          img {
+            width: 30px;
+            margin-right: 10px;
+          }
+          span {
+            font: normal normal 700 30px/36px Open Sans;
+            text-transform: uppercase;
+            position: relative;
+            top: -4px;
+          }
+          &:hover {
+            filter: opacity(.6);
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-nav {
+  width: 90%;
+  margin: 150px auto;
+  max-width: $max-width;
+  border-top: 1px solid white;
+  .mod_navigation {
+    margin: 20px auto;
+    ul {
+      li {
+        a, strong {
+          position: relative;
+          font: normal normal 400 30px/60px Open Sans;
+          text-transform: uppercase;
+          color: white;
+          padding-left: 30px;
+          transition: color 250ms;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 0;
+            background: url("/files/assets/layout/menu-icon.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+            filter: invert(1);
+          }
+        }
+        strong, strong:before, a:hover {
+          color: $hell_blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .mobile_menu .inner .header-inner .inner-top {
+    width: 95%;
+    .header-right .menu-close {
+      img {
+        margin-right: 4px;
+      }
+      span  {
+        font: normal normal 700 20px/30px Open Sans;
+      }
+    }
+  }
+
+  .menu-nav {
+    margin: 100px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-left {
+    width: 40%;
+    z-index: 50;
+  }
+  .mobile_menu .inner .header-inner .inner-top .header-right .menu-close {
+    img {
+      width: 23px;
+    }
+    span {
+      font: normal normal 700 18px/20px Open Sans;
+    }
+  }
+
+  .menu-nav .mod_navigation ul li a, .menu-nav .mod_navigation ul li strong {
+    font: normal normal 400 25px/50px Open Sans;
+    a:before {
+      top: -13px;
+    }
+  }
+}

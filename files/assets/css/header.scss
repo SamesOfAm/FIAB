@@ -1,23 +1,125 @@
 @import 'variables';
 
-#header .inside {
+/*#header .inside {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  max-width: 1100px;
+  max-width: $max-width;
   margin: 0 auto;
-}
+}*/
 
 .header-left {
   .content-text p {
     margin: 0;
     a {
+      transition: filter 250ms;
+      &:nth-child(2) {
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(5134%) hue-rotate(192deg) brightness(93%) contrast(100%);
+        }
+      }
       &:first-child {
-        display: inline-block;
-        border-top: 5px solid $blue;
-        padding-top: 20px;
+        &:hover {
+          filter: grayscale(1);
+        }
+      }
+      &:last-child {
+        &:hover {
+          filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(7143%) hue-rotate(163deg) brightness(96%) contrast(100%);
+        }
+      }
+    }
+    img {
+      height: 32px;
+    }
+  }
+}
+
+.header-right {
+  align-content: center;
+  .mod_mobile_menu {
+    .mobile_menu_trigger {
+      display: flex;
+      justify-content: end;
+      flex-wrap: wrap;
+      cursor: pointer;
+      transition: filter 250ms;
+      img {
+        width: 40px;
+        padding-right: 8px;
+      }
+      span {
+        font: normal normal 700 30px/36px Open Sans;
+        text-transform: uppercase;
+      }
+      &:hover {
+        filter: opacity(.6);
       }
     }
   }
 }
+
+#header .inside, .inner-top {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.header-left {
+  align-content: center;
+  width: 35%;
+  .bar-top {
+    display: inline-block;
+    border-top: 5px solid #0267a4;
+    position: absolute;
+    width: 115px;
+    top: 0;
+  }
+  .content-text {
+    p {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header-left {
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  #header .inside {
+    width: 95%;
+  }
+  .header-left {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #header .inside, .inner-top {
+    height: 120px;
+  }
+  .header-right .mod_mobile_menu .mobile_menu_trigger span {
+    font: normal normal 700 25px/30px Open Sans;
+  }
+  .header-left .bar-top {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-left {
+    .content-text {
+      margin-top: 7px;
+    }
+  }
+}
+
 
