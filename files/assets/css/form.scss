@@ -113,6 +113,9 @@
       background-color: $green;
       color: white;
     }
+    button {
+      cursor: pointer;
+    }
   }
 }
 
@@ -144,6 +147,9 @@
           color: $hell_blue;
           background-color: $gray;
         }
+      }
+      button {
+        cursor: pointer;
       }
     }
   }
