@@ -30,9 +30,12 @@ ul {
   display: flex;
   justify-content: end;
   height: 100%;
+  align-items: center;
   img {
     width: 40px;
     transition: filter 250ms;
+    height: 40px;
+    cursor: pointer;
     &:hover {
       filter: brightness(0) saturate(100%) invert(31%) sepia(49%) saturate(802%) hue-rotate(108deg) brightness(103%) contrast(100%);
     }
