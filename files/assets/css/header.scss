@@ -1,31 +1,19 @@
 @import 'variables';
 
-/*#header .inside {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  max-width: $max-width;
-  margin: 0 auto;
-}*/
-
 .header-left {
   .content-text p {
     margin: 0;
     a {
       transition: filter 250ms;
-      &:nth-child(2) {
-        &:hover {
-          filter: brightness(0) saturate(100%) invert(15%) sepia(100%) saturate(5134%) hue-rotate(192deg) brightness(93%) contrast(100%);
-        }
+      .icon-hover {
+        display: none;
       }
-      &:first-child {
-        &:hover {
-          filter: grayscale(1);
+      &:hover {
+        & .icon-hover {
+          display: initial;
         }
-      }
-      &:last-child {
-        &:hover {
-          filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(7143%) hue-rotate(163deg) brightness(96%) contrast(100%);
+        & .icon-content {
+          display: none;
         }
       }
     }
