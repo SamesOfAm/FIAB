@@ -222,6 +222,8 @@
       }
       a {
         color: $hell_blue;
+        background: white;
+        padding: 2px 2px;
         transition: filter 250ms;
         &:hover {
           filter: opacity(.6);
@@ -328,7 +330,11 @@
 .mod_login {
   width: 95%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+}
+
+.current-info p {
+  color: white;
 }
 
 

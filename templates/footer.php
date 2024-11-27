@@ -16,5 +16,5 @@
 
 <div class="footer-right">
     {{insert_content::30}}
-    {{insert_module::5}}
+    <!-- {{insert_module::5}} -->
 </div>

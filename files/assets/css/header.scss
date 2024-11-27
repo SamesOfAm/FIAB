@@ -24,7 +24,18 @@
 }
 
 .header-right {
-  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  .header-login-link {
+    width: 19px;
+    height: 25px;
+    a {
+      color: black;
+      text-transform: uppercase;
+    }
+  }
   .mod_mobile_menu {
     .mobile_menu_trigger {
       display: flex;
